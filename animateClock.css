@@ -1,0 +1,21 @@
+#seconds {
+    animation: animateClock 60s linear infinite;
+}
+
+#minutes {
+    animation: animateClock 3600s linear infinite;
+}
+
+#hours {
+    animation: animateClock 43200s linear infinite;
+}
+
+@keyframes animateClock {
+    0% {transform: rotate(0deg); transform-origin: center;}
+    100% {transform: rotate(360deg); transform-origin: center;}
+}
+
+@keyframes animateClockJsSet {
+    0% {transform: rotate(0deg); transform-origin: center;}
+    100% {transform: rotate(360deg); transform-origin: center;}
+}

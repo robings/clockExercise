@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Clock with Animation</title>
+    <script defer src='jsClockAnimation.js'></script>
+    <link rel='stylesheet' type='text/css' href='styles.css' />
+    <link rel='stylesheet' type='text/css' href='animateClock.css' />
+</head>
+<body>
+<nav>
+    <a href='index.html'>Clock Animation</a>
+    <a href='aniJsClock.html'>Clock with JS and Animation</a>
+    <a href='jsClock.html'>JavaScript Clock</a>
+</nav>
+<section>
+    <svg width='400' height='400'>
+        <g id='clockFace'>
+            <circle r='150' cx='200' cy='200' style='fill: #FFFFFF; stroke-width: 1; stroke: #999999;' />
+            <text x='188' y='67' style='fill: #EBBD3F; '>XII</text>
+            <text x='199' y='67' style='fill: #EBBD3F; transform: rotate(30deg); transform-origin: center;'>I</text>
+            <text x='192' y='67' style='fill: #EBBD3F; transform: rotate(60deg); transform-origin: center;'>II</text>
+            <text x='188' y='67' style='fill: #EBBD3F; transform: rotate(90deg); transform-origin: center;'>III</text>
+            <text x='188' y='67' style='fill: #EBBD3F; transform: rotate(120deg); transform-origin: center;'>IIII</text>
+            <text x='199' y='67' style='fill: #EBBD3F; transform: rotate(150deg); transform-origin: center;'>V</text>
+            <text x='192' y='67' style='fill: #EBBD3F; transform: rotate(180deg); transform-origin: center;'>VI</text>
+            <text x='188' y='67' style='fill: #EBBD3F; transform: rotate(210deg); transform-origin: center;'>VII</text>
+            <text x='185' y='67' style='fill: #EBBD3F; transform: rotate(240deg); transform-origin: center;'>VIII</text>
+            <text x='192' y='67' style='fill: #EBBD3F; transform: rotate(270deg); transform-origin: center;'>IX</text>
+            <text x='199' y='67' style='fill: #EBBD3F; transform: rotate(300deg); transform-origin: center;'>X</text>
+            <text x='192' y='67' style='fill: #EBBD3F; transform: rotate(330deg); transform-origin: center;'>XI</text>
+        </g>
+
+        <g id='secondsOuter'>
+            <line id='secondsJsSet' x1='200' y1='200' x2='200' y2='75' style='stroke-width: 1; stroke: #FF0000;' />
+        </g>
+        <g id='hoursOuter'>
+            <line id='hoursJsSet' x1='200' y1='200' x2='200' y2='125' style='stroke-width: 3; stroke: #333333;' />
+        </g>
+        <g id='minutesOuter'>
+            <line id='minutesJsSet' x1='200' y1='200' x2='200' y2='90' style='stroke-width: 2; stroke: #333333;' />
+        </g>
+    </svg>
+</section>
+<section id='clock'>
+    00:00:00
+</section>
+<footer>
+    Digital clock using JavaScript. Analog clock set by JavaScript on page refresh, then css keyframe animation runs the clock.
+</footer>
+</body>
+</html>
