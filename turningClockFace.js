@@ -1,8 +1,6 @@
 let svg=document.getElementById('turningClockFace')
 for (let i=0; i<(12*4); i++) {
-    console.log('hello')
     let newLine=document.createElementNS('http://www.w3.org/2000/svg', 'line')
-    console.log(newLine)
     newLine.setAttribute('x1', '200')
     newLine.setAttribute('y1', '70')
     newLine.setAttribute('x2', '200')
