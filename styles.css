@@ -23,6 +23,11 @@ nav a:hover {
     background-color: #EBBD3F;
 }
 
+svg {
+    width: 400px;
+    height: 400px;
+}
+
 #clock {
     color: #EBBD3F;
     padding: 20px;
